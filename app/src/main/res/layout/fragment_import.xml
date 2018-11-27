@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ImportFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:id="@+id/ivimagen"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="83dp"
+        android:layout_marginTop="49dp"
+        android:src="@mipmap/ic_launcher_round"
+        app:layout_constraintBottom_toTopOf="@+id/btnImagenLobezno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnImagenLobezno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="138dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="1dp"
+        android:text="Lobezno"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnImagenCharles"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivimagen" />
+
+    <Button
+        android:id="@+id/btnImagenCharles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Charles Xavier"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnImagenLobezno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnImagenLobezno" />
+</android.support.constraint.ConstraintLayout>
